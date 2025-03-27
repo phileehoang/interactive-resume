@@ -135,6 +135,26 @@ function initCustomCursor() {
         cursorDot.style.top = e.clientY + 'px';
     });
     
+    // Mobile touch support - show cursor only when touching
+    document.addEventListener('touchstart', function(e) {
+        if (e.touches.length > 0) {
+            cursorDot.style.opacity = '1'; // Show cursor
+            cursorDot.style.left = e.touches[0].clientX + 'px';
+            cursorDot.style.top = e.touches[0].clientY + 'px';
+        }
+    });
+    
+    document.addEventListener('touchmove', function(e) {
+        if (e.touches.length > 0) {
+            cursorDot.style.left = e.touches[0].clientX + 'px';
+            cursorDot.style.top = e.touches[0].clientY + 'px';
+        }
+    });
+    
+    document.addEventListener('touchend', function() {
+        cursorDot.style.opacity = '0'; // Hide cursor when finger is lifted
+    });
+    
     // Enhanced cursor feedback for different element types
     
     // Interactive elements (links, buttons, cards)
