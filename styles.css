@@ -465,12 +465,14 @@ body {
     }
 
     .contact-container h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         white-space: normal;
         max-width: 100%;
         line-height: 1.2;
-        word-break: break-word; /* Ensure text breaks properly */
-        hyphens: auto; /* Allow hyphenation if needed */
+        word-break: break-word;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-align: center;
     }
 
     .contact-container p {
@@ -484,7 +486,8 @@ body {
     
     /* Experience section responsive styles */
     .experience-container h2 {
-        font-size: 1.4rem; /* Reduced to exactly 1.4rem as requested */
+        font-size: 1.3rem;
+        white-space: nowrap;
     }
 }
 
