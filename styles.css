@@ -423,6 +423,32 @@ body {
     font-size: 0.8rem;
 }
 
+/* Desktop and Mobile Titles */
+.mobile-title {
+    display: none; /* Hide on desktop */
+}
+
+.desktop-title {
+    display: block; /* Show on desktop */
+    font-size: 2.2rem;
+    white-space: nowrap; /* Keep on one line */
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+    background-color: #111;
+    color: #fff;
+    padding: 150px 10%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+
 @media (max-width: 480px) {
     #hero-text {
         font-size: 1.6rem;
@@ -448,7 +474,6 @@ body {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     /* Hero section responsive styles */
     #hero-text {
@@ -490,6 +515,24 @@ body {
         font-size: 1.7rem;
         white-space: nowrap;
     }
+    
+    /* Switch titles on mobile */
+    .mobile-title {
+        display: block; /* Show on mobile */
+        font-size: 1.5rem;
+        white-space: normal;
+        max-width: 100%;
+        line-height: 1.3;
+        word-break: break-word;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .desktop-title {
+        display: none; /* Hide on mobile */
+    }
 }
 
 /* Additional mobile styles for very small screens */
@@ -501,21 +544,6 @@ body {
     #subtext {
         font-size: 1rem;
     }
-}
-
-/* Contact Section */
-#contact {
-    position: relative;
-    background-color: #111;
-    color: #fff;
-    padding: 150px 10%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center;
 }
 
 /* Email animation styling */
