@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Hoang - Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="three.js" type="module"></script>
+    <script defer src="particles.js" type="module"></script>
+    <script defer src="animations.js" type="module"></script>
+</head>
+<body>
+    <section id="hero">
+        <canvas id="heroBackgroundCanvas"></canvas>
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <h1 id="hero-text">Hey, I'm Philip Hoang</h1>
+            <p id="subtext">eCommerce & Performance Marketing Manager</p>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>📌 Background</h3>
+                    <p>With a strong foundation in eCommerce and performance marketing, I specialize in driving revenue growth through paid media, conversion optimization, and retention strategies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>📊 Data-Driven Growth</h3>
+                    <p>Expert in scaling digital advertising campaigns across Meta and Google, optimizing performance through data-backed strategies.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🚀 Results-Focused</h3>
+                    <p>Passionate about delivering measurable results and helping brands scale profitably through full-funnel marketing and strategic media buying.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <canvas id="skillsCanvas"></canvas>
+        <div class="skills-container">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>📈 Digital Advertising</h3>
+                    <p>Expert in scaling Meta and Google campaigns, optimizing performance through data-backed strategies.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>📊 Data-Driven Growth</h3>
+                    <p>Strong analytical mindset, leveraging data to drive growth, optimize funnels, and increase ROI.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🎯 Performance Optimization</h3>
+                    <p>Proficient in A/B testing, audience segmentation, and conversion rate optimization (CRO).</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🛒 eCommerce Operations</h3>
+                    <p>Experience in DTC brand operations, product merchandising, and full-funnel marketing.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🤝 Team Leadership & Collaboration</h3>
+                    <p>Proven ability to manage cross-functional teams and align marketing, creative, and operations for brand efficiency.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🚀 Strategic Problem-Solving</h3>
+                    <p>Highly adaptable and quick to troubleshoot challenges, ensuring business objectives are met efficiently.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>⚡ Fast Learner & Innovation-Driven</h3>
+                    <p>Always staying ahead of industry trends, continuously learning, and implementing new strategies for growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <canvas id="gridCanvas"></canvas>
+        <div class="experience-container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <h3>🚀 eCommerce Manager</h3>
+                    <p><strong>SCULPTED</strong> | 2020 - Present</p>
+                    <p>Led DTC Brand Operations, ensuring seamless performance across all digital touchpoints. Oversaw:</p>
+                    <ul>
+                        <li>📊 Growth Strategy & Conversion Optimization</li>
+                        <li>📈 Analytics & Data Insights (TripleWhale, Google Analytics 4)</li>
+                        <li>🚀 Performance Marketing & Retention Strategy</li>
+                        <li>🎨 Ad Creative Development & Variant Testing</li>
+                        <li>💡 Email & SMS Marketing (Klaviyo, Attentive)</li>
+                    </ul>
+                </div>
+                <div class="timeline-event">
+                    <h3>📈 Digital Marketing Lead</h3>
+                    <p><strong>ORO Los Angeles</strong> | 2015 - 2020</p>
+                    <p>Led digital marketing efforts for a premium men's DTC fashion brand, driving revenue growth through performance-driven ad strategies and full-funnel marketing execution:</p>
+                    <ul>
+                        <li>📣 Meta Ads (Facebook & Instagram), Google Ads</li>
+                        <li>📊 Analytics Implementation & Reporting</li>
+                        <li>📧 Email Marketing & Retention Campaigns</li>
+                    </ul>
+                </div>
+                <div class="timeline-event">
+                    <h3>🛒 Amazon Seller Central Specialist</h3>
+                    <p><strong>Lumnix Lighting</strong> | 2010 - 2015</p>
+                    <p>Managed end-to-end Amazon operations, improving visibility and performance through strategic optimizations:</p>
+                    <ul>
+                        <li>📄 Developed & Optimized Product Detail Pages</li>
+                        <li>🔍 Keyword Research & Listing Optimization</li>
+                        <li>👥 Customer Service & Product Merchandising</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <canvas id="wowEffectCanvas"></canvas>
+        <div class="contact-container">
+            <h2>Let's See If We're a Good Fit.</h2>
+            <p>If you're seeking someone experienced in scaling brands, optimizing eCommerce operations, and effectively collaborating across teams—I'd love the opportunity to connect.</p>
+
+            <p>Throughout my career, I've focused on turning ideas into measurable results through strategic digital marketing, data-driven strategies, and streamlined workflows. If this aligns with your vision, <strong>let's talk.</strong></p>
+
+            <p class="contact-name">Philip Hoang</p>
+            <p class="contact-location">Orange County, CA</p>
+            <p id="email-link"></p>
+        </div>
+    </section>
+
+    <footer id="tech-stack">
+        <div class="tech-container">
+            <p>I've crafted this website from the ground up using modern web technologies.</p>
+            <div class="tech-badges">
+                <span class="tech-badge">Three.js</span>
+                <span class="tech-badge">GSAP</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">WebGL</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="email-animation.js"></script>
+</body>
+</html>
