@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     // Email obfuscation
-    const user = "philiphoang8";
+    const user = "philiphoang334";
     const domain = "gmail.com";
     const emailElement = document.getElementById("email-link");
 

@@ -465,7 +465,8 @@ body {
     }
 
     .contact-container h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        white-space: nowrap;
     }
 
     .contact-container p {
@@ -583,6 +584,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
 .contact-container p {
@@ -861,4 +863,11 @@ a:not(.button):not(.cta-button):after {
 
 a:not(.button):not(.cta-button):hover:after {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-container h2 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+    }
 }
