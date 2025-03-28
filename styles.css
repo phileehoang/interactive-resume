@@ -684,6 +684,13 @@ body {
     animation: fadeIn 1.5s infinite;
 }
 
+/* Mobile-specific adjustment for scroll indicator */
+@media (max-width: 768px) {
+    .scroll-indicator {
+        bottom: 100px; /* Move up by approximately 40% on mobile */
+    }
+}
+
 /* Bouncing Effect */
 @keyframes bounce {
     0%, 100% { transform: translate(-50%, 0); }
