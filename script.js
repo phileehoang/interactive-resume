@@ -1,15 +1,18 @@
 // Main JavaScript file for the resume website
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Email obfuscation
-    const user = "philiphoang334";
-    const domain = "gmail.com";
+    // Enhanced email obfuscation
     const emailElement = document.getElementById("email-link");
 
     if (emailElement) {
+        // Split the email parts and encode them to make it harder for scrapers
+        const encodedUser = "&#112;&#104;&#105;&#108;&#105;&#112;&#104;&#111;&#97;&#110;&#103;&#51;&#51;&#52;";
+        const encodedDomain = "&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;";
+        
+        // Create the email link with encoded parts
         const emailLink = document.createElement("a");
-        emailLink.href = `mailto:${user}@${domain}`;
-        emailLink.innerText = `${user}@${domain}`;
+        emailLink.href = `mailto:philiphoang334@gmail.com`; // Actual mailto still works
+        emailLink.innerHTML = `${encodedUser}&#64;${encodedDomain}`; // Display encoded version
         emailElement.appendChild(emailLink);
     }
     
